@@ -33,6 +33,7 @@ CREATE TABLE Person
     Order_quantity  int,
     Person_id int,
     Product_id int,
+	Order_Status varchar(100),
   CONSTRAINT fk_Orders_Product
       FOREIGN KEY( Product_id )
       REFERENCES Product( Product_id ),
